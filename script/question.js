@@ -77,7 +77,8 @@ let generalQuestions = [
     
 ]
 
-
+let quizOne = historyQuestions;
+let quizTwo = geographyQuestions;
 
 
 // {

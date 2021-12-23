@@ -5,15 +5,15 @@ let audioFail = new Audio('../sounds/fail.wav');
 let audioWin = new Audio('../sounds/win.mp3')
 
 
-function initHistory() {
-    document.getElementById('value-quiz').innerHTML = historyQuestions.length;
+function initQuiz(i) {
+    document.getElementById('value-quiz').innerHTML = i.length;
 
-    showQuestion();
+    showQuestion(i);
 }
 
-function showQuestion() {
+function showQuestion(i) {
 
-    if (currentQuestion >= historyQuestions.length) {
+    if (currentQuestion >= i.length) {
         document.getElementById('question-cards').style = 'display: none;';
         document.getElementById('end-screen').style = '';
         document.getElementById('end-all-questions').innerHTML = historyQuestions.length;
@@ -21,7 +21,7 @@ function showQuestion() {
         audioWin.play();
         document.getElementById('progress-bar-end').style = `width: 100%`
     } else {
-        let question = historyQuestions[currentQuestion];
+        let question = i[currentQuestion];
         let progress = Math.round(currentQuestion / historyQuestions.length * 100);
         let questValue = document.getElementById('start-value').innerHTML = currentQuestion +1;
 
