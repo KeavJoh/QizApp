@@ -1,0 +1,105 @@
+
+Wie nennt man völlig kostenlose Programme für Computer?
+
+Software
+Hardware
+Shareware
+Freeware
+
+Freeware
+
+
+
+Gegeben ist die Zahl 1010 im Dualsystem. Wie heißt diese Zahl im Dezimalsystem?
+
+8
+10
+12
+9
+
+10
+
+
+
+Was bedeutet "Open-Source"?
+
+Es handelt sich um eine gecrackte Version.
+Der Quellcode ist zugänglich und änderbar.
+Alles ist gratis.
+Man kann die Software überall verwenden.
+
+Der Quellcode ist zugänglich und änderbar.
+
+
+
+
+
+Wie nennt man die Technik, bei der jeder vernetzte Rechner sowohl als Server als auch als Client fungieren kann und die einzelnen Rechner direkt miteinander kommunizieren?
+
+Computer-to-Computer
+Multifunctional Networking
+Server-to-Server
+Peer-to-Peer
+
+Peer-to-Peer
+
+
+
+
+Wovon spricht man, wenn ein Betriebssystem mehrere Prozesse gleichzeitig ausführen kann?
+
+Multitasking
+Multimanagement
+Parallel Processing
+Swapping
+
+Multitasking
+
+
+
+Aus wie vielen Bits besteht ein Byte?
+
+2
+8
+1
+16
+
+8
+
+
+
+
+Was ist ein "Font" im Zusammenhang mit Computern?
+
+ein Steuergerät für Computerspiele
+ein Simulationsprogramm
+ein Zeichensatz
+ein Bildarchiv
+
+ein Zeichensatz
+
+
+
+
+
+Wofür steht die Abkürzung "HTML" in der Computertechnologie?
+
+ein Betriebssystem für WAP
+ein Komprimierungsformat für das Internet
+eine Computerprogrammiersprache
+eine Auszeichnungssprache zur Gestaltung von Webseiten im Internet
+
+eine Auszeichnungssprache zur Gestaltung von Webseiten im Internet
+
+
+
+
+
+Wie heißt die Software für die Ablaufsteuerung in einem Computer?
+
+Intrasoft
+TCP/IP
+Betriebssystem
+Interface
+
+Betriebssystem
