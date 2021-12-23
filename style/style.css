@@ -21,6 +21,10 @@ h1 {
     font-size: 4em !important;
 }
 
+h2 {
+    font-size: 3.5em !important;
+}
+
 .head-div {
     height: 100vh;
     width: 100%;
@@ -64,9 +68,16 @@ h1 {
     color: #f5f0e1;
     border-left: 3px solid transparent;
     font-size: 1.8em;
+    transition: all 225ms ease-in-out;
 }
 
 .nav-side:hover {
+    color: #ffc13b;
+    border-left: 3px solid #ffc13b;
+    transition: all 225ms ease-in-out;
+}
+
+.nav-active {
     color: #ffc13b;
     border-left: 3px solid #ffc13b;
 }
@@ -83,4 +94,41 @@ h1 {
     width: 350px;
     height: auto;
     margin-top: 50px;
+}
+
+.card-quest {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    background-color: #f5f0e1 !important;
+    border: 3px solid #f5f0e1 !important;
+    transition: all 225ms ease-in-out;
+}
+
+.card-quest:hover {
+    border: 3px solid #1e3d59 !important;
+    transition: all 225ms ease-in-out;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+}
+
+.card-quest span {
+    margin-left: 20px;
+    padding: 20px;
+    color: #f5f0e1;
+    background-color: #1e3d59;
+    border: 2px solid #1e3d59;
+}
+
+.content h2 {
+    margin-bottom: 100px;
 }
