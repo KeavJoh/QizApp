@@ -3,40 +3,51 @@ let rightQuestions = 0;
 let audioCorrect = new Audio('../sounds/correct.mp3');
 let audioFail = new Audio('../sounds/fail.wav');
 let audioWin = new Audio('../sounds/win.mp3')
+let quizTask;
 
 
-function initQuiz(i) {
-    document.getElementById('value-quiz').innerHTML = i.length;
+function initQuiz(q) {
+    document.getElementById('value-quiz').innerHTML = q.length;
+    quizTask = q;
 
-    showQuestion(i);
+    showQuestion();
 }
 
-function showQuestion(i) {
 
-    if (currentQuestion >= i.length) {
-        document.getElementById('question-cards').style = 'display: none;';
-        document.getElementById('end-screen').style = '';
-        document.getElementById('end-all-questions').innerHTML = historyQuestions.length;
-        document.getElementById('end-right-questions').innerHTML = rightQuestions;
-        audioWin.play();
-        document.getElementById('progress-bar-end').style = `width: 100%`
+function showQuestion() {
+
+    if (currentQuestion >= quizTask.length) {
+        endGame();
     } else {
-        let question = i[currentQuestion];
-        let progress = Math.round(currentQuestion / historyQuestions.length * 100);
-        let questValue = document.getElementById('start-value').innerHTML = currentQuestion +1;
-
-        document.getElementById('progress-bar').style = `width: ${progress}%`
-        document.getElementById('question-text').innerHTML = question['question']
-        document.getElementById('answer-a').innerHTML = question['answer_1']
-        document.getElementById('answer-b').innerHTML = question['answer_2']
-        document.getElementById('answer-c').innerHTML = question['answer_3']
-        document.getElementById('answer-d').innerHTML = question['answer_4']
+        continueGame();
     }
 
 }
 
+function endGame() {
+    document.getElementById('question-cards').style = 'display: none;';
+    document.getElementById('end-screen').style = '';
+    document.getElementById('end-all-questions').innerHTML = quizTask.length;
+    document.getElementById('end-right-questions').innerHTML = rightQuestions;
+    audioWin.play();
+    document.getElementById('progress-bar-end').style = `width: 100%`
+}
+
+function continueGame() {
+    let question = quizTask[currentQuestion];
+    let progress = Math.round(currentQuestion / quizTask.length * 100);
+    let questValue = document.getElementById('start-value').innerHTML = currentQuestion +1;
+
+    document.getElementById('progress-bar').style = `width: ${progress}%`
+    document.getElementById('question-text').innerHTML = question['question']
+    document.getElementById('answer-a').innerHTML = question['answer_1']
+    document.getElementById('answer-b').innerHTML = question['answer_2']
+    document.getElementById('answer-c').innerHTML = question['answer_3']
+    document.getElementById('answer-d').innerHTML = question['answer_4']
+}
+
 function answer(select) {
-    let question = historyQuestions[currentQuestion];
+    let question = quizTask[currentQuestion];
     let rightAnswer = question['right'];
 
     if (select == rightAnswer) {
@@ -79,5 +90,5 @@ function restartQuiz() {
 
     currentQuestion = 0;
     rightQuestions = 0;
-    initHistory();
+    initQuiz(quizTask);
 }
