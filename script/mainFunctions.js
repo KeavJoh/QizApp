@@ -50,7 +50,7 @@ function ifAnswerElected(numberAnswer) {
 // line 89 in supportFunction.js
 function nextQuestion() {
     currentQuestion++;
-    lockNextQuiestionButton();
+    lockNextQuestionButton();
     resetAnswerBackground();
     addValueOfCurrentQuizQestionText()
     showQuestion();
@@ -58,11 +58,10 @@ function nextQuestion() {
 
 
 
+// line 110 in supportFunction.js
 function restartQuiz() {
     document.getElementById('question-cards').style = '';
     document.getElementById('end-screen').style = 'display: none;';
 
-    currentQuestion = 0;
-    rightQuestions = 0;
-    initQuiz(currentQuiz);
+    resetParameters();
 }

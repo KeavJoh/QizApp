@@ -87,7 +87,7 @@ function releaseNextQuestionButton() {
 
 
 // nextQuestion
-function lockNextQuiestionButton() {
+function lockNextQuestionButton() {
     document.getElementById('btn-next').disabled = true;
 }
 
@@ -103,4 +103,13 @@ function resetAnswerBackground() {
 
 function addValueOfCurrentQuizQestionText() {
     let questValue = document.getElementById('start-value').innerHTML = currentQuestion + 1;
+}
+
+
+
+// restartQuiz
+function resetParameters() {
+    currentQuestion = 0;
+    rightQuestions = 0;
+    initQuiz(currentQuiz);
 }
