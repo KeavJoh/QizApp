@@ -1,4 +1,4 @@
-let historyQuestions = [
+let historyQuiz = [
     {
         "question": "In welchem Jahr Begann der Zweite Weltkrieg?",
         "answer_1": "1939",
@@ -65,15 +65,15 @@ let historyQuestions = [
     }
 ];
 
-let geographyQuestions = [
+let geographyQuiz = [
 
 ]
 
-let computerQuestions = [
+let computerQuiz = [
 
 ]
 
-let generalQuestions = [
+let generalQuiz = [
     
 ]
 
