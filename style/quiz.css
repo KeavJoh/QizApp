@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+.content-center {
+    justify-content: space-between;
+}
+
 .content img {
     width: 350px;
     height: auto;
