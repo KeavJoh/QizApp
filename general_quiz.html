@@ -40,7 +40,7 @@
 
     <div class="head-div">
         <div class="quiz">
-            <div class="sidebar">
+            <div class="sidebar mobile-display-none">
                 <a href="index.html"><img src="logo_icons/logo_robot_shine.png" alt=""></a>
                 <hr>
                 <a href="history_quiz.html" class="nav-side">Geschichte</a>
@@ -79,7 +79,7 @@
                     <p><b id="start-value">1</b> von <b id="value-quiz">5</b> Fragem</p>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-secondary btn-lg btn-quiz" id="btn-next" disabled
+                    <button type="button" class="btn btn-secondary btn-lg btn-quiz btn-next-quiz" id="btn-next" disabled
                         onclick="nextQuestion()">Nächste Frage</button>
                 </div>
             </div>
@@ -95,8 +95,9 @@
                     Allgemeinwissen richtig beantwortet!</h3>
                 <div class="end-buttons">
                     <a href="index.html"><button
-                            class="btn btn-secondary btn-lg btn-quiz btn-end">Hauptmenü</button></a>
-                    <button class="btn btn-secondary btn-lg btn-quiz btn-end" onclick="restartQuiz()">Neustart</button>
+                            class="btn btn-secondary btn-lg btn-quiz btn-end btn-next-quiz">Hauptmenü</button></a>
+                    <button class="btn btn-secondary btn-lg btn-quiz btn-end btn-next-quiz"
+                        onclick="restartQuiz()">Neustart</button>
                 </div>
             </div>
         </div>

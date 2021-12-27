@@ -7,14 +7,18 @@
 
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
 }
 
 
 body {
     min-height: 100vh;
     background-color: #f5f0e1 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -39,11 +43,37 @@ h2 {
 .quiz {
     display: flex;
     height: 80%;
+    max-height: 100vh;
     width: 80%;
     background-color: #f5f0e1;
     border: 5px solid #1e3d59;
     border-radius: 15px;
 }
 
-/* ____________________________________________________ */
+.dp-none {
+    display: none;
+}
 
+.mobile-display-none {
+    display: block;
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1400px) {
+    h1 {
+        font-size: 3em !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .mobile-display-none {
+        display: none !important;
+    }
+}
+
+@media (max-width: 575px) {
+
+}
