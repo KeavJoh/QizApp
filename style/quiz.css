@@ -24,8 +24,9 @@
     width: 100%;
     border-radius: unset !important;
     border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
     margin-bottom: 30px;
-    background-color: #f5f0e1 !important;
+    background-color: #1e3d59 !important;
 }
 
 .progress-bar {
@@ -44,12 +45,12 @@
     margin-bottom: 30px;
     background-color: #f5f0e1 !important;
     border: 3px solid #f5f0e1 !important;
-    transition: all 225ms ease-in-out;
+    transition: all 75ms ease-in-out;
 }
 
 .card-quest:hover {
     border: 3px solid #1e3d59 !important;
-    transition: all 225ms ease-in-out;
+    transition: all 75ms ease-in-out;
 }
 
 .card-body {
@@ -73,22 +74,25 @@
 }
 
 .btn-next-quiz {
-    margin-top: 20px;
     width: 250px;
     background-color: #1e3d59 !important;
     font-size: 2em !important;
     color: #f5f0e1 !important;
     border: 3px solid transparent !important;
-    transition: all 225ms ease-in-out !important;
+    transition: all 75ms ease-in-out !important;
 }
 
 .btn-next-quiz:hover {
     border: 3px solid #ffc13b !important;
-    transition: all 225ms ease-in-out !important;
+    transition: all 75ms ease-in-out !important;
 }
 
 .btn-end {
-    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#end-screen {
+    justify-content: space-between;
 }
 
 #end-screen h2 {
