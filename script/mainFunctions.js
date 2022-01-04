@@ -1,11 +1,9 @@
 let currentQuestion = 0;
 let rightQuestions = 0;
-let audioCorrect = new Audio('../sounds/correct.mp3');
-let audioFail = new Audio('../sounds/fail.wav');
-let audioWin = new Audio('../sounds/win.mp3')
+let audioCorrect = new Audio('./sounds/correct.mp3');
+let audioFail = new Audio('./sounds/fail.mp3');
+let audioWin = new Audio('./sounds/win.mp3')
 let currentQuiz;
-let test;
-let test1;
 
 
 
