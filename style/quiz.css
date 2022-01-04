@@ -106,98 +106,13 @@
 }
 
 @media (max-width: 1920px) {
-    .content h2 {
-        font-size: 3em !important;
-    }
 
-    .btn-next-quiz {
-        margin-top: unset;
-    }
-
-    .card-quest span {
-        padding: 5px;
-    }
-
-    .btn-next-quiz {
-        font-size: 1.5em !important;
-        padding: 5px !important;
-        width: 250px;
-        margin-bottom: 10px;
-    }
 }
 
 @media (max-width: 1400px) {
-    .content img {
-        width: 250px;
-    }
-}
 
-@media (max-width: 992px) {
-    .content h2 {
-        font-size: 2.5em !important;
-    }
-
-    .card-quest {
-        width: 70%;
-    }
-
-    .card-quest span {
-        padding: 5px;
-    }
-
-    .btn-next-quiz {
-        font-size: 1.3em !important;
-        padding: 0px !important;
-        width: 200px;
-        margin-bottom: 10px;
-    }
-
-    .content img {
-        width: 200px;
-    }
 }
 
 @media (max-width: 575px) {
-    .quiz {
-        height: 100%;
-        width: 95%;
-    }
 
-    .content h2 {
-        font-size: 1.5em !important;
-        margin-bottom: unset;
-    }
-
-    .card-quest {
-        font-size: 1.0em;
-        width: 70%;
-    }
-
-    .card-body {
-        padding: unset !important;
-    }
-
-    .card-quest span {
-        padding: 5px;
-    }
-
-    #counter {
-        margin-top: unset;
-        font-size: 0.8em;
-    }
-
-    .btn-next-quiz {
-        font-size: 1em !important;
-        padding: 0px !important;
-        width: 150px;
-        margin-bottom: 10px;
-    }
-
-    .progress {
-        margin-bottom: 10px !important;
-    }
-
-    .content img {
-        width: 100px;
-    }
 }

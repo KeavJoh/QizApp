@@ -7,7 +7,7 @@
 }
 
 .sidebar img {
-    height: 150px;
+    height: 300px;
     width: auto;
     margin-top: 30px;
 }
@@ -24,13 +24,13 @@
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
     font-size: 1.8em;
-    transition: all 225ms ease-in-out;
+    transition: all 75ms ease-in-out;
 }
 
 .nav-side:hover {
     color: #ffc13b;
     border-left: 3px solid #ffc13b;
-    transition: all 225ms ease-in-out;
+    transition: all 75ms ease-in-out;
 }
 
 .nav-active {
@@ -44,53 +44,12 @@
 
 @media (max-width: 1400px) {
 
-    .sidebar img {
-        height: 150px;
-        margin-bottom: unset;
-    }
-
-    .nav-side {
-        font-size: 1.2em;
-    }
 }
 
 @media (max-width: 992px) {
 
-    .sidebar {
-        width: 100%;
-    }
-
-    .sidebar img {
-        height: 200px;
-        margin-bottom: unset;
-    }
-
-    .nav-side {
-        font-size: 1.9em;
-    }
-
-    .quiz {
-        height: 90%;
-        width: 70%;
-    }
-
-    .nav-side:hover {
-        border-right: 3px solid #ffc13b;
-        transition: all 225ms ease-in-out;
-    }
 }
 
 @media (max-width: 575px) {
 
-    .sidebar img {
-        height: 150px;
-    }
-
-    .nav-side {
-        font-size: 1.3em;
-    }
-
-    .quiz {
-        width: 70% !important;
-    }
 }
