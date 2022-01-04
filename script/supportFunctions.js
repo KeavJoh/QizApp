@@ -1,11 +1,11 @@
-// initQuiz
+// main function initQuiz
 function setValueOfQuestionsText() {
     document.getElementById('value-quiz').innerHTML = currentQuiz.length;
 }
 
 
 
-// showQuestion
+// main function showQuestion
 function endOfGame() {
     return currentQuestion >= currentQuiz.length;
 }
@@ -23,7 +23,7 @@ function endGameScreen() {
 
 
 
-function continueGame() { // line 37 in supportFunction.js
+function continueGame() {
     progressStatusBar();
 
     let question = currentQuiz[currentQuestion];
@@ -34,7 +34,7 @@ function continueGame() { // line 37 in supportFunction.js
 
 
 
-// continueGame
+// main function continueGame
 function progressStatusBar() {
     let progress = Math.round(currentQuestion / currentQuiz.length * 100);
     let questValue = document.getElementById('start-value').innerHTML = currentQuestion +1;
@@ -58,7 +58,7 @@ function showNextAnswers(question) {
 
 
 
-// ifAnswerElected
+// main function ifAnswerElected
 function correctAnswer(numberAnswer) {
     document.getElementById(numberAnswer).classList.add('bg-right');
     rightQuestions++;
@@ -86,7 +86,7 @@ function releaseNextQuestionButton() {
 
 
 
-// nextQuestion
+// main function nextQuestion
 function lockNextQuestionButton() {
     document.getElementById('btn-next').disabled = true;
 }
@@ -107,7 +107,7 @@ function addValueOfCurrentQuizQestionText() {
 
 
 
-// restartQuiz
+// main function restartQuiz
 function resetParameters() {
     currentQuestion = 0;
     rightQuestions = 0;

@@ -4,10 +4,11 @@ let audioCorrect = new Audio('../sounds/correct.mp3');
 let audioFail = new Audio('../sounds/fail.wav');
 let audioWin = new Audio('../sounds/win.mp3')
 let currentQuiz;
+let test;
+let test1;
 
 
 
-// line 1 in supportFunction.js
 function initQuiz(electionQuiz) {
     currentQuiz = electionQuiz;
 
@@ -17,7 +18,6 @@ function initQuiz(electionQuiz) {
 
 
 
-// line 8 in supportFunction.js
 function showQuestion() {
 
     if (endOfGame()) {
@@ -30,7 +30,6 @@ function showQuestion() {
 
 
 
-// line 61 in supportFunction.js
 function ifAnswerElected(numberAnswer) {
     let question = currentQuiz[currentQuestion];
     let rightAnswer = question['right'];
@@ -47,7 +46,6 @@ function ifAnswerElected(numberAnswer) {
 
 
 
-// line 89 in supportFunction.js
 function nextQuestion() {
     currentQuestion++;
     lockNextQuestionButton();
@@ -58,7 +56,6 @@ function nextQuestion() {
 
 
 
-// line 110 in supportFunction.js
 function restartQuiz() {
     document.getElementById('question-cards').style = '';
     document.getElementById('end-screen').style = 'display: none;';

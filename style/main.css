@@ -63,17 +63,48 @@ p {
 }
 
 @media (max-width: 1920px) {
-
+    h2 {
+        font-size: 3em !important;
+    }
 }
 
 @media (max-width: 1400px) {
-
+    h2 {
+        font-size: 2em !important;
+    }
 }
 
 @media (max-width: 992px) {
+    .quiz {
+        padding: unset;
+    }
 
+    h2 {
+        font-size: 1.7em !important;
+    }
+
+    h3 {
+        font-size: 1.2em !important;
+    }
 }
 
 @media (max-width: 575px) {
+    .quiz {
+        border-radius: unset;
+    }
 
+    h2 {
+        font-size: 1.5em !important;
+        margin-bottom: unset;
+    }
+}
+
+@media (max-width: 400px) {
+    h2 {
+        font-size: 1.3em !important;
+    }
+
+    h3 {
+        font-size: 1.0em !important;
+    }
 }

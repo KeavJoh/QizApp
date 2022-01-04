@@ -1,10 +1,3 @@
-// historyQuiz line 8
-// geographyQuiz line 77
-// computerQuiz line 163
-// generalQuiz line 232
-
-
-
 let historyQuiz = [
     {
         "question": "In welchem Jahr Begann der Zweite Weltkrieg?",
